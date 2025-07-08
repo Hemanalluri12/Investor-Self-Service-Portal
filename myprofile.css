@@ -1,0 +1,97 @@
+/* myprofile.css */
+
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the font family */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Profile container styles */
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Page header styles */
+.page-header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+/* Profile info and settings styles */
+.profile-info,
+.profile-settings {
+    margin-bottom: 2em;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.profile-info span {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.profile-settings form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.save-button {
+    padding: 0.5em 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Page footer styles */
+.page-footer {
+    text-align: center;
+    margin-top: 2em;
+    color: #555;
+}
+
+.page-footer a {
+    color: #007bff;
+    text-decoration: none;
+}

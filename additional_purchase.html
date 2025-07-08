@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Purchase | Investor Portal</title>
+    <link rel="stylesheet" href="additional_purchase.css">
+    <link rel="icon" href="RISE UP.png">
+</head>
+<body>
+    <div class="additional-purchase-container">
+        <header class="page-header">
+            <h1>Additional Purchase</h1>
+            <p>Grow your investment with us.</p>
+        </header>
+        <div class="content-wrapper">
+            <aside class="sidebar left-sidebar">
+                <h2>Recommendations</h2>
+                <ul>
+                    <li>
+                        <img src="understand_risks.jpg" alt="Understand Risks">
+                        Understand the risks before investing.
+                    </li>
+                    <li>
+                        <img src="diversify_portfolio.jpg" alt="Diversify Portfolio">
+                        Diversify your portfolio.
+                    </li>
+                    <li>
+                        <img src="review_past_performance.jpg" alt="Review Past Performance">
+                        Review past performance of schemes.
+                    </li>
+                </ul>
+            </aside>
+            <main class="main-content">
+                <form id="additional-purchase-form" class="purchase-form">
+                    <div class="form-group">
+                        <label for="folio-number">Folio Number:</label>
+                        <input type="text" id="folio-number" name="folio-number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="scheme">Choose a Scheme:</label>
+                        <select id="scheme" name="scheme" required>
+                            <option value="">Select a Scheme</option>
+                            <option value="Scheme1">Scheme1</option>
+                            <option value="Scheme2">Scheme2</option>
+                            <option value="Scheme3">Scheme3</option>
+                            <option value="Scheme4">Scheme4</option>
+                            <option value="Scheme5">Scheme5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Investment Amount:</label>
+                        <input type="number" id="amount" name="amount" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment-method">Payment Method:</label>
+                        <select id="payment-method" name="payment-method" required>
+                            <option value="online">Online (PG)</option>
+                            <option value="cheque">Cheque/Demand Draft</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-button">Submit Purchase</button>
+                </form>
+            </main>
+            <aside class="sidebar right-sidebar">
+                <h2>Tips for New Investors</h2>
+                <ul>
+                    <li>
+                        <img src="start_small.jpg" alt="Start Small">
+                        Start with small investments.
+                    </li>
+                    <li>
+                        <img src="set_goals.jpg" alt="Set Goals">
+                        Set clear financial goals.
+                    </li>
+                    <li>
+                        <img src="stay_updated.jpg" alt="Stay Updated">
+                        Stay updated with market trends.
+                    </li>
+                </ul>
+            </aside>
+        </div>
+        <footer class="page-footer">
+            <p>For any assistance, contact our support team at <a href="mailto:support@eriseup.com">support@riseup.com</a>.</p>
+        </footer>
+    </div>
+
+    <script src="add_purchase.js"></script>
+</body>
+</html>

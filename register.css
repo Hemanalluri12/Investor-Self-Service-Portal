@@ -1,0 +1,98 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333;
+}
+
+.register-container {
+    display: flex;
+    height: 100%;
+}
+
+.left-block, .middle-block, .right-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-block {
+    background-color: #ecf2f1; /* Teal background */
+    color: #100f0f;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.middle-block {
+    max-width: 600px;
+    background-color: #3498db; /* Blue background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-block {
+    background-color: #edf1ed; /* Green background */
+    color: #0a0909;
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page-footer {
+    text-align: center;
+    padding: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff; /* White input fields */
+    color: #333;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #2ecc71; /* Darker green button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #27ae60; /* Darker on hover */
+}
+
+.page-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.page-footer a:hover {
+    text-decoration: underline;
+}

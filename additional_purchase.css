@@ -1,0 +1,134 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7eaea;
+    color: #fff;
+}
+
+.additional-purchase-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.page-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+}
+
+.content-wrapper {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 150px; /* Add space between the main content and sidebars */
+}
+
+.sidebar {
+    width: 20%;
+    padding: 20px;
+    background-color: #34495e;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sidebar ul li img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    flex: 1;
+    max-width: 400px;
+    padding: 40px;
+    background-color: #2c3e50;
+    border-radius: 10px;
+    margin: 0 20px; /* Add horizontal margin to separate from sidebars */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #34495e;
+    color: #fff;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #20638f;
+}
+
+.page-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+}
+
+.page-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.page-footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        max-width: 100%;
+        margin: 0;
+    }
+}

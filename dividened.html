@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Dividend Option | Investor Portal</title>
+    <link rel="stylesheet" href="dividend_option.css">
+    <link rel="icon" href="RISE UP.png">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Change Dividend Option</h1>
+            <p>Update your dividend preference here.</p>
+        </header>
+
+        <section class="content">
+            <div class="left-side">
+                <h2>Why Change Your Dividend Option?</h2>
+                <p>Choosing the right dividend option can impact your investment strategy. Reinvesting dividends allows your investment to grow faster over time, while receiving payouts provides immediate income.</p>
+
+                <h2>Instructions:</h2>
+                <ol>
+                    <li>Enter your folio number.</li>
+                    <li>Select the scheme you want to modify.</li>
+                    <li>Choose either reinvest or payout for your new dividend option.</li>
+                    <li>Click "Submit Change" to update your preference.</li>
+                </ol>
+
+                <h2>Need Help?</h2>
+                <p>If you need assistance, please contact our support team at <a href="mailto:support@riseup.com">support@riseup.com</a>.</p>
+            </div>
+
+            <div class="right-side">
+                <form id="dividend-form" class="form">
+                    <div class="form-group">
+                        <label for="folio-number">Folio Number:</label>
+                        <input type="text" id="folio-number" name="folio-number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="scheme">Select Scheme:</label>
+                        <select id="scheme" name="scheme" required>
+                            <option value="">Choose a Scheme</option>
+                            <!-- Options loaded dynamically from JavaScript -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dividend-option">New Dividend Option:</label>
+                        <select id="dividend-option" name="dividend-option" required>
+                            <option value="reinvest">Reinvest</option>
+                            <option value="payout">Payout</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-button">Submit Change</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Contact our support team at <a href="mailto:support@riseup.com">support@riseup.com</a> for assistance.</p>
+        </footer>
+    </div>
+</body>
+</html>

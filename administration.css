@@ -1,0 +1,91 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;  /* Light blue background */
+    color: #000;  /* Change text color to black for better contrast */
+}
+
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.page-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #00838f;  /* Darker shade of blue for header */
+    color: #fff;  /* White text for better contrast */
+}
+
+.admin-content {
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    background-color: #b2ebf2;  /* Lighter shade of blue for content background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-nav {
+    width: 200px;
+    padding: 10px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.admin-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-nav li {
+    margin-bottom: 10px;
+}
+
+.admin-nav a {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #00838f;  /* Darker shade of blue for navigation links */
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.admin-nav a:hover {
+    background-color: #004d40;  /* Even darker shade of blue for hover effect */
+}
+
+.admin-nav a.active {
+    background-color: #004d40;  /* Same darker shade for active link */
+}
+
+.admin-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.section-content {
+    display: none;
+}
+
+.section-content:target {
+    display: block;
+}
+
+.page-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #00838f;  /* Darker shade of blue for footer */
+    color: #fff;
+}
+
+.page-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.page-footer a:hover {
+    text-decoration: underline;
+}

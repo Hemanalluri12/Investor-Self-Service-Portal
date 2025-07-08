@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redemption | Investor Portal</title>
+    <link rel="stylesheet" href="redemption.css">
+    <link rel="icon" href="RISE UP.png">
+</head>
+<body>
+    <div class="redemption-container">
+        <header class="page-header">
+            <h1>Redemption</h1>
+            <p>Redeem your investments easily.</p>
+        </header>
+        <div class="content-wrapper">
+            <aside class="sidebar left-sidebar">
+                <h2>Recommendations</h2>
+                <ul>
+                    <li>Check the fund performance before redemption.</li>
+                    <li>Consider the tax implications.</li>
+                    <li>Review your financial goals.</li>
+                </ul>
+            </aside>
+            <main class="main-content">
+                <form id="redemption-form" class="redemption-form">
+                    <div class="form-group">
+                        <label for="folio-number">Folio Number:</label>
+                        <input type="text" id="folio-number" name="folio-number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="scheme">Select Scheme:</label>
+                        <select id="scheme" name="scheme" required>
+                            <option value="">Choose a Scheme</option>
+                            <!-- Options loaded from the backend -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="units">Units to Redeem:</label>
+                        <input type="number" id="units" name="units" min="1" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount to Redeem:</label>
+                        <input type="number" id="amount" name="amount" min="1" step="0.01" required>
+                    </div>
+                    <button type="submit" class="submit-button">Submit Redemption</button>
+                </form>
+            </main>
+            <aside class="sidebar right-sidebar">
+                <h2>Tips for Investors</h2>
+                <ul>
+                    <li>Stay informed about market trends.</li>
+                    <li>Keep an emergency fund ready.</li>
+                    <li>Review your portfolio regularly.</li>
+                </ul>
+            </aside>
+        </div>
+        <footer class="page-footer">
+            <p>For any assistance, contact our support team at <a href="mailto:support@riseup.com">support@riseup.com</a>.</p>
+        </footer>
+    </div>
+
+    <script src="redemption.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change PIN | Investor Portal</title>
+    <link rel="stylesheet" href="changepin.css">
+    <link rel="icon" href="RISE UP.png">
+
+</head>
+<body>
+    <div class="change-pin-container">
+        <header class="page-header">
+            <h1>Change PIN</h1>
+            <p>Secure your account with a new PIN.</p>
+        </header>
+        <form id="change-pin-form" class="change-pin-form">
+            <div class="form-group">
+                <label for="old-pin">Old PIN:</label>
+                <input type="password" id="old-pin" name="old-pin" required>
+            </div>
+            <div class="form-group">
+                <label for="new-pin">New PIN:</label>
+                <input type="password" id="new-pin" name="new-pin" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-pin">Confirm New PIN:</label>
+                <input type="password" id="confirm-pin" name="confirm-pin" required>
+            </div>
+            <button type="submit" class="submit-button">Change PIN</button>
+        </form>
+        <footer class="page-footer">
+            <p>For any assistance, contact our support team at <a href="mailto:support@riseup.com">support@riseup.com</a>.</p>
+        </footer>
+    </div>
+
+    <script src="changepin.js"></script>
+</body>
+</html>

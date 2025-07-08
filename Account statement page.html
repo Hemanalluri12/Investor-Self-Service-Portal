@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RISEUP- Account Statement</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="statement.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <link rel="icon" href="RISE UP.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!-- Navigation links -->
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="Account Summary page.html">Account Summary</a></li>
+                <li><a href="fresh_purchase.html">Fresh Purchase</a></li>
+                <li><a href="additional_purchase.html">Additional Purchase</a></li>
+                <li><a href="redemption.html">Redemption</a></li>
+                <li><a href="switches.html">Switches</a></li>
+                <li><a href="myprofile.html">My Profile</a></li>
+                <li><a href="administration.html">Administration</a></li>
+                 <!-- Added View Transactions link -->
+            </ul>
+        </nav>
+    </header>
+
+    <main class="account-statement">
+        <section class="statement-header">
+            <h1>Account Statement</h1>
+            <div class="statement-period">
+                <p>Period: <span class="date">Jan 1, 2023 - Mar 31, 2023</span></p>
+            </div>
+        </section>
+
+        <section class="transaction-history">
+            <h2>Transaction History</h2>
+            <table class="transaction-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Scheme</th>
+                        <th>Units</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows for each transaction -->
+                    <tr>
+                        <td>Jan 10, 2023</td>
+                        <td>Purchase</td>
+                        <td>Scheme A</td>
+                        <td>+1000</td>
+                        <td>$10,000.00</td>
+                    </tr>
+                    <!-- More rows as needed -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="statement-summary">
+            <h2>Summary</h2>
+            <div class="summary-box">
+                <div class="summary-item">
+                    <span class="summary-label">Total Investments:</span>
+                    <span class="summary-value">$50,000.00</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Total Redemptions:</span>
+                    <span class="summary-value">$10,000.00</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Net Gain/Loss:</span>
+                    <span class="summary-value">+$5,000.00</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="statement-actions">
+            <div class="print-button">
+                <button>Print Statement</button>
+            </div><br>
+            <div class="export-button">
+                <button>Export to PDF</button>
+            </div>
+            <div class="print-button">
+                <button>
+                    <a href="viewtransaction.html">View Transactions</a>
+                </button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script src="statement.js"></script>
+</body>
+</html>

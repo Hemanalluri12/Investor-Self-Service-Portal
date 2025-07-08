@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Bank Details | Investor Portal</title>
+    <link rel="stylesheet" href="viewbankdetails.css">
+    <link rel="icon" href="RISE UP.png">
+</head>
+<body>
+    <div class="bank-details-container">
+        <header class="page-header">
+            <h1>View Bank Details</h1>
+            <p>Manage your linked bank accounts.</p>
+        </header>
+        <div class="bank-details-content">
+            <div class="bank-accounts">
+                <h2>Bank Accounts</h2>
+                <div class="account-list">
+                    <!-- Account items loaded from the backend -->
+                    <div class="account-item">
+                        <p>Account Name: XYZ Bank</p>
+                        <p>Account Number: XXXXXXXX</p>
+                        <p>Branch: ABC Branch</p>
+                    </div>
+                    <!-- Sample account item -->
+                </div>
+                <button id="add-bank" class="add-button">Add Bank Account</button>
+            </div>
+            <div class="nominee-details">
+                <h2>Nominee Details</h2>
+                <div class="nominee-info">
+                    <!-- Nominee information loaded from the backend -->
+                    <p>Nominee Name: John Doe</p>
+                    <p>Relationship: Spouse</p>
+                    <p>Date of Birth: January 1, 1980</p>
+                </div>
+                <button id="edit-nominee" class="edit-button">Edit Nominee</button>
+            </div>
+        </div>
+        <footer class="page-footer">
+            <p>For any assistance, contact our support team at <a href="mailto:support@riseup.com">support@riseup.com</a>.</p>
+        </footer>
+    </div>
+
+    <script src="viewbankdetails.js"></script>
+</body>
+</html>

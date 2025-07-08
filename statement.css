@@ -1,0 +1,121 @@
+
+/* styles.css */
+
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the font family */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header and navigation styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main content styles */
+main {
+    padding: 2em;
+}
+
+.account-statement {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.statement-header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.statement-period {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.transaction-history {
+    margin-bottom: 2em;
+}
+
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+    padding: 0.75em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.transaction-table th {
+    background-color: #f9f9f9;
+}
+
+.statement-summary {
+    margin-bottom: 2em;
+}
+
+.summary-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-item {
+    flex: 1;
+    text-align: center;
+}
+
+.summary-label {
+    font-weight: bold;
+}
+
+.statement-actions {
+    text-align: center;
+}
+
+.print-button,
+.export-button {
+    /*margin: 0.5em 0;*/
+    padding: 0.5em 1em;
+    background-color: #f2f4f7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

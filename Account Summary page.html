@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RISEUP- Account Summary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="summary.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" href="RISE UP.png">
+
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="Account statement page.html">Account Statement</a></li>
+                <li><a href="fresh_purchase.html">Fresh Purchase</a></li>
+                <li><a href="additional_purchase.html">Additional Purchase</a></li>
+                <li><a href="redemption.html">Redemption</a></li>
+                <li><a href="switches.html">Switches</a></li>
+                <li><a href="myprofile.html">My Profile</a></li>
+                <li><a href="administration.html">Administration</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="account-summary">
+        <section class="summary-header">
+            <h1>Account Summary</h1>
+            <div class="summary-details">
+                <p>Welcome John Doe</p>
+                <div class="balance-info">
+                    <span class="label">Total Balance:</span>
+                    <span class="value" id="totalBalance">$125,000.00</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-overview">
+            <h2>Portfolio Overview</h2>
+            <div class="portfolio-chart">
+                <canvas id="portfolioChart"></canvas>
+            </div>
+            <div class="portfolio-stats">
+                <div class="stat">
+                    <span class="stat-label">Total Investments:</span>
+                    <span class="stat-value" id="totalInvestments">$100,000.00</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Profit/Loss:</span>
+                    <span class="stat-value" id="profitLoss">$25,000.00</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="performance-summary">
+            <h2>Performance Summary</h2>
+            <div class="performance-chart">
+                <canvas id="performanceChart"></canvas>
+            </div>
+            <div class="performance-stats">
+                <div class="stat">
+                    <span class="stat-label">YTD Return:</span>
+                    <span class="stat-value" id="ytdReturn">+5.2%</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Annualized Return:</span>
+                    <span class="stat-value" id="annualizedReturn">+8.7%</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="ai-insights">
+            <h2>AI Insights</h2>
+            <div class="insight-item">
+                <span class="insight-label">Market Trend Prediction:</span>
+                <span class="insight-value" id="marketTrend">Bullish</span>
+            </div>
+            <div class="insight-item">
+                <span class="insight-label">Recommended Schemes:</span>
+                <span class="insight-value" id="recommendedSchemes">Scheme A, Scheme B</span>
+            </div>
+        </section>
+        <div class="print-button">
+            <button>
+                <a href="viewbankdetails.html">Viewbankdetails</a>
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 RISEUP-ISSP. All rights reserved.</p>
+    </footer>
+
+    <script src="summary.js"></script>
+</body>
+</html>

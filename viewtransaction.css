@@ -1,0 +1,102 @@
+/* viewtransaction.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.transactions-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.page-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.transactions-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-options {
+    margin-bottom: 20px;
+}
+
+.filter-options label,
+.transactions-table table th {
+    color: #333;
+}
+
+.filter-options select,
+.filter-options input[type="date"],
+.transactions-table table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.filter-button,
+.pagination-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-button:hover,
+.pagination-button:hover {
+    background-color: #0056b3;
+}
+
+.transactions-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transactions-table th {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #ddd;
+}
+
+.transactions-table td {
+    border-top: 1px solid #ddd;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.page-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e7e7e7;
+}
+
+.page-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.page-footer a:hover {
+    text-decoration: underline;
+}

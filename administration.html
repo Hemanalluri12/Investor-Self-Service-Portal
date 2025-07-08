@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration Module | Investor Portal</title>
+    <link rel="stylesheet" href="administration.css">
+    <link rel="icon" href="RISE UP.png">
+
+</head>
+<body>
+    <div class="admin-container">
+        <header class="page-header">
+            <h1>Administration Module</h1>
+            <p>Manage your investment platform settings.</p>
+        </header>
+        <div class="admin-content">
+            <nav class="admin-nav">
+                <ul>
+                    <li><a href="#users">Manage Users</a></li>
+                    <li><a href="#schemes">Manage Schemes</a></li>
+                    <li><a href="#reports">Generate Reports</a></li>
+                    <li><a href="#settings">System Settings</a></li>
+                </ul>
+            </nav>
+            <section class="admin-section">
+                <div class="section-content" id="users">
+                    <h2>Manage Users</h2>
+                    <form id="user-management-form">
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="role">Role:</label>
+                            <select id="role" name="role">
+                                <option value="admin">Admin</option>
+                                <option value="user">User</option>
+                            </select>
+                        </div>
+                        <button type="submit">Add User</button>
+                    </form>
+                    <div id="user-list">
+                        <h3>Current Users</h3>
+                        <ul>
+                            <!-- List of users will be dynamically populated here -->
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="section-content" id="schemes">
+                    <h2>Manage Schemes</h2>
+                    <form id="scheme-management-form">
+                        <div class="form-group">
+                            <label for="scheme-name">Scheme Name:</label>
+                            <input type="text" id="scheme-name" name="scheme-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="scheme-description">Description:</label>
+                            <textarea id="scheme-description" name="scheme-description" required></textarea>
+                        </div>
+                        <button type="submit">Add Scheme</button>
+                    </form>
+                    <div id="scheme-list">
+                        <h3>Current Schemes</h3>
+                        <ul>
+                            <!-- List of schemes will be dynamically populated here -->
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="section-content" id="reports">
+                    <h2>Generate Reports</h2>
+                    <form id="report-generation-form">
+                        <div class="form-group">
+                            <label for="report-type">Report Type:</label>
+                            <select id="report-type" name="report-type">
+                                <option value="user-activity">User Activity</option>
+                                <option value="investment-performance">Investment Performance</option>
+                                <option value="system-logs">System Logs</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="report-period">Period:</label>
+                            <input type="text" id="report-period" name="report-period" placeholder="e.g., Jan 2024 - Mar 2024" required>
+                        </div>
+                        <button type="submit">Generate Report</button>
+                    </form>
+                    <div id="report-results">
+                        <h3>Report Results</h3>
+                        <!-- Generated reports will be displayed here -->
+                    </div>
+                </div>
+                
+                <div class="section-content" id="settings">
+                    <h2>System Settings</h2>
+                    <form id="settings-form">
+                        <div class="form-group">
+                            <label for="site-name">Site Name:</label>
+                            <input type="text" id="site-name" name="site-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="site-email">Contact Email:</label>
+                            <input type="email" id="site-email" name="site-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="maintenance-mode">Maintenance Mode:</label>
+                            <select id="maintenance-mode" name="maintenance-mode">
+                                <option value="enabled">Enabled</option>
+                                <option value="disabled">Disabled</option>
+                            </select>
+                        </div>
+                        <button type="submit">Save Settings</button>
+                    </form>
+                    <div id="settings-status">
+                        <h3>Current Settings</h3>
+                        <!-- Current settings will be displayed here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="page-footer">
+            <p>For any assistance, contact our support team at <a href="mailto:support@riseup.com">support@riseup.com</a>.</p>
+        </footer>
+    </div>
+
+    <script src="administration.js"></script>
+</body>
+</html>

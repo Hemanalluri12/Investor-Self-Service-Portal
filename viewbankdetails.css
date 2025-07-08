@@ -1,0 +1,79 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.bank-details-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure container stretches to full height */
+}
+
+.page-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50; /* Updated to a shade of green */
+    color: #fff;
+    margin-bottom: 20px; /* Added margin for separation */
+}
+
+.bank-details-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex; /* Display items side by side */
+    justify-content: space-between; /* Space items evenly */
+}
+
+.bank-accounts, .nominee-details {
+    flex-basis: 45%; /* Set width for each section */
+}
+
+.bank-accounts {
+    margin-right: 20px; /* Add spacing between sections */
+}
+
+.nominee-details {
+    margin-left: 20px; /* Add spacing between sections */
+}
+
+.account-list, .nominee-info {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.add-button, .edit-button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Updated to a shade of blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Added margin to separate buttons */
+}
+
+.add-button:hover, .edit-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.page-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e7e7e7;
+    margin-top: auto; /* Push footer to bottom */
+}
+
+.page-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.page-footer a:hover {
+    text-decoration: underline;
+}
